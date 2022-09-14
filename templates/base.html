@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css">
+    {% block js %}}{% endblock %}
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>
