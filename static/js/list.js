@@ -1,7 +1,7 @@
 function get_items(){
     $('.content').empty();
     $('.content').append('<img src="static/gif/load.gif">');
-    fetch('http://localhost:8000/api/list_items', {
+    fetch('https://stripe.coko38.ru/api/list_items', {
         method: 'GET',
       })
       .then(res => res.json())
@@ -21,7 +21,7 @@ function get_items(){
 function detail_info(id){
     $('.content').empty();
     $('.content').append('<img src="static/gif/load.gif">');
-    fetch('http://localhost:8000/api/item/'+id, {
+    fetch('https://stripe.coko38.ru/api/item/'+id, {
         method: 'GET',
       })
       .then(res => res.json())
@@ -41,7 +41,7 @@ function CreateSession(item_id){
     var quant = $('#quant').val();
     $('.content').empty();
     $('.content').append('<img src="static/gif/load.gif">');
-    fetch('http://localhost:8000/api/buy/'+item_id+'?quantity='+quant, {
+    fetch('https://stripe.coko38.ru/api/buy/'+item_id+'?quantity='+quant, {
         method: 'GET',
       })
       .then(res => res.json())

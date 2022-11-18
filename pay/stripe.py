@@ -7,8 +7,8 @@ stripe.api_key = settings.STRIPE_SECRET
 def CreateStripeSessionService(price_id=None, quantity=1):
     """Создание Stripe Session ID для оплаты выбранного товара"""
     session = stripe.checkout.Session.create(
-            cancel_url="http://localhost:8000",
-            success_url="http://localhost:8000",
+            cancel_url="https://stripe.coko38.ru",
+            success_url="https://stripe.coko38.ru",
             line_items=[
                 {
                     "price": price_id,
