@@ -42,8 +42,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'config.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://*',
-    'https://*',
+    'http://stripe.coko38.ru',
+    'https://stripe.coko38.ru',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
